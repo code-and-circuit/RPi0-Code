@@ -6,9 +6,9 @@ int main()
 {
 	int fd = wiringPiI2CSetup(devld);
 	
-	wiringPiI2CWriteReg8(fd, 103);
-	wiringPiI2CWriteReg8(fd, 0);
-	wiringPiI2CWriteReg8(fd, 0);
-	wiringPiI2CWriteReg8(fd, 0);
+	wiringPiI2CWrite(fd, 103);
+	wiringPiI2CWrite(fd, 0);
+	wiringPiI2CWrite(fd, 0);
+	wiringPiI2CWrite(fd, 0);
   
 }
