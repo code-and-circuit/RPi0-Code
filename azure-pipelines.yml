@@ -20,5 +20,5 @@ steps:
   displayName: 'Setup'
 
 - script: |
-    arm-linux-gnueabihf-g++ -lwiringpi main.cpp -o main
+    arm-linux-gnueabihf-g++ -lwiringPi main.cpp -o main
   displayName: 'Build'
