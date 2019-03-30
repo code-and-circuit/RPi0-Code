@@ -16,5 +16,5 @@ steps:
   displayName: 'Setup'
 
 - script: |
-    g++-arm-linux-gnueabihf main.cpp -o main
+    arm-linux-gnueabihf-g++ main.cpp -o main
   displayName: 'Build'
