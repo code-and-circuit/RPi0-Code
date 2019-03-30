@@ -11,8 +11,12 @@ pool:
 
 steps:
 - script: |
+    sudo dpkg --add-architecture armhf
     sudo apt update
     sudo apt install g++-arm-linux-gnueabihf
+    sudo apt install libc6:armhf
+    wget https://lion.drogon.net/wiringpi-2.50-1.deb
+    sudo dpkg -i wiringpi-2.50-1.deb
   displayName: 'Setup'
 
 - script: |
