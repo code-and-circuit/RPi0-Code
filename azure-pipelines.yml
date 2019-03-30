@@ -15,8 +15,7 @@ steps:
     sudo apt install g++-arm-linux-gnueabihf
     wget http://archive.raspberrypi.org/debian/pool/main/w/wiringpi/wiringpi_2.50_armhf.deb
     sudo dpkg --add-architecture armhf
-    sudo apt install libc6:armhf
-    sudo dpkg -i wiringpi_2.50_armhf.deb
+    sudo dpkg -i wiringpi_2.50_armhf.deb --force
 
   displayName: 'Setup'
 
